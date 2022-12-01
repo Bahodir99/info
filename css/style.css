@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1100px;
+    margin: 0 auto;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Livvic', sans-serif;
+
+}
+ul li{
+    list-style: none;
+    color: white;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.header{
+    background-color:  #014E56;
+    padding-top: 80px;
+}
+.header__nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__list{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+}
+.header__item:nth-child(2){
+    display: flex;
+    flex-grow: 1;
+    margin-left: 40px;
+}
+.header__item{
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.header__item:hover > a{
+    color: #F67E7E;
+}
+.header__item:nth-child(3){
+    padding: 8px 32px;
+    border: 1px solid white;
+    border-radius: 40px;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+.header__item:nth-child(3):hover{
+    background-color: #F67E7E;
+    border-color: #F67E7E;
+}
+.header__item:nth-child(3) > a:hover{
+    color: #014E56;
+}
+.wrapper{
+    background-color: #014E56;
+    padding-bottom: 200px ;
+    padding-top: 135px;
+    background-image: url(../img/Group\ 1\ \(2\).png), url(../img/Group\ 2\ \(2\).png);
+    background-repeat: no-repeat;
+    background-position: bottom right 165px, left center;
+
+}
+.wrapper__inner{
+    font-style: normal;
+}
+.wrapper__list{
+    display: flex;  
+    align-items: center;
+    justify-content: space-between; 
+}
+.wrapper__title {
+    font-weight: 700;
+    font-size: 75px;
+    font-style: normal;
+}
+.wrapper__title span{
+    color: #F67E7E;
+}
+.wrapper__text{
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    padding-top: 80px;
+    margin-left: 25px;
+    position: relative;
+}
+.wrapper__text::before{
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 5px;
+    top: -39px;
+    background-color: #79C8C7; 
+}
+.hero{
+    background-color: #012F34;
+    padding-top: 70px;
+    padding-bottom: 170px;
+    background-image: url(../img/Group\ 8\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.hero__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero__title{
+    color: white;
+    font-size: 45px;
+    position: relative;
+}
+.hero__title::before{
+    position: absolute;
+    width: 60px;
+    height: 5px;
+    content: '';
+    background-color:#F67E7E;
+    top: -55px;
+}
+.hero__text{
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 5px;
+    width: 450px;
+}
+.hero__subtitle{
+    font-weight: 700;
+    font-style: normal;
+    font-size: 19px;
+    color: #F67E7E;
+}
+.page{
+    background-color:#004047;
+    padding-top: 110px;
+    padding-bottom: 150px;
+    background-image: url(../img/Group\ org.png) , url(../img/Group\ org2.png);
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+}
+.page__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.page__title{
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 44px;
+}
+.page__title span{
+    color: #79C8C7;
+}
+.page__list{
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+}
+
+.page__item{
+    text-align: center;
+    font-style: normal;
+    margin-top: 50px;
+    position: relative;
+}
+.page__item::before {
+    content: '';
+    background-image: url(../img/obb.png);
+    position: absolute;
+    background-position: center top;
+    width: 60px;
+    height: 60px;
+}
+.page__info{
+    font-style: italic;
+    margin-top: 10px;
+}
+.page_subtitle{
+    color: #79C8C7;
+}
+.page__con{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 900px;
+    text-align: center;
+    margin-top: 20px;
+}
+.page__info{
+    font-style: italic;
+    margin-bottom: 35px;
+}
+.main{
+    background-color: #F67E7E;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    background-image: url(../img/pos\(3\).png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+.main__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.main__title{
+    color: #012F34;
+    font-weight: 700;
+    font-style:normal;
+    font-size: 34px;
+    line-height: 34px;
+}
+.main__text{
+    border: 2px solid #012F34;
+    padding: 11px 35px;
+    border-radius: 35px;
+    cursor: pointer;
+    transition: all ease 0.5s;
+}
+.main__text:hover{
+    border: 2px solid #fff;
+    background-color: #012F34;
+}
+.main__text > a:hover{
+    color:#F67E7E
+}
+.footer {
+    background-color: #002529;
+    padding: 48px 0;
+}
+
+.footer_inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__menu {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    width: 159px;
+    margin-right: 125px;
+}
+
+.footer__menu .footer_logo a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    transition: all ease 0.5s;
+}
+
+.footer__menu .footer_logo a:hover{
+    color: #F67E7E;
+}
+
+.footer__menu .footer_logo:nth-child(2) {
+    display: flex;
+    flex-grow: 1;
+}
+
+.footer__adress {
+    display: flex;
+    flex-grow: 1;
+}
+
+.footer__list {
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.footer__icons{
+    display: flex;
+    flex-direction: column;
+}
+.footer__list--icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footer__item--icon:nth-child(2){
+    padding: 0 25px;
+}
+
+.footer__icons p{
+    margin-top: 49px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy

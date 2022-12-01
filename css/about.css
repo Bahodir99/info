@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Livvic', sans-serif;
+}
+ul li{
+    list-style: none;
+}
+a{
+    color: #fff;
+    text-decoration: none;
+}
+.container{
+    width: 1100px;
+    margin: auto;
+}
+.header{
+    background-color: #014E56;
+    padding: 50px 0;
+}
+.header__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__list{
+    display: flex;
+    justify-content: space-between;
+    width: 800px;
+}
+.header__item:nth-child(2){
+    display: flex;
+    flex-grow: 1;
+    margin-left: 40px;
+}
+.header__item:nth-child(3){
+    padding: 8px 32px;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    transition: all ease 0.8s;
+}
+.header__item:nth-child(3):hover{
+    background-color: #F67E7E;
+    border-color: #F67E7E;
+}
+.header__item a:hover{
+    color:#F67E7E;
+    transition: all ease 0.8s;
+}
+.header__item:nth-child(3) a:hover {
+    color: #014E56;
+}
+.main{
+    background-color:#014E56;
+    padding: 70px 0;
+    background-image: url(../about_img/Group\ 8\ \(5\).png);
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+.main__list{
+    display: flex;
+    flex-grow: 1;
+}
+.main__title{
+    margin-right: 350px;
+    font-size: 45px;
+    font-weight: 700;
+    color: #fff;
+}
+.main__text{
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 55px;
+    position: relative;
+}
+.main__text::before{
+    content: '';
+    width: 45px;
+    height: 4px;
+    background-color:#F67E7E;
+    position: absolute;
+    top: -70px;
+}
+.hero{
+    background-color:#004047;
+    background-image: url(../about_img/Group\ 8\ \(6\).png), url(../about_img/Group\ 8\ Copy.png);
+    background-repeat: no-repeat;
+    background-position: left top, right bottom;
+    padding: 70px 0;
+}
+
+.hero__title{
+    margin-left: 370px;
+    margin-top: 150px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 700;
+    color: #fff;
+
+}
+.hero__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero__item{
+    text-align: center;
+    color: #fff;
+    margin-top: 30px;
+}
+.hero__con1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 220px;
+    background-color:#012F34;
+    flex-direction: column;
+    position: relative;
+}
+.hero__con1::after{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 2px solid #F67E7E;
+    content: '+';
+    background-color: #F67E7E;
+    border-radius: 50%;
+    bottom: -22px;
+}
+.hero__con1:nth-child(6):after{
+    content: 'x';
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+}
+.hero__item b{
+    font-size: 20px;
+    font-weight: 400;
+    color:#79C8C7;
+    margin: 10px 0;
+}
+.wrapper{
+    background-color:  #F67E7E;
+    padding: 85px 0;
+    background-image: url(../about_img/Group\ 8\ \(7\).png);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+.wrapper__list{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 120px;
+}
+.wrapper__title{
+    font-weight: 700;
+    font-size: 29px;
+    color: #012F34;
+    line-height: 30px;
+}
+.wrapper__item{
+    padding: 11px 42px;
+    border: 2px solid #012F34;
+    border-radius: 35px;
+    transition: all ease 0.8s;
+}
+.wrapper__item:hover{
+    background-color:#012F34 ;
+    border: 2px solid #fff;
+}
+.wrapper__item a{
+    color:#012F34;
+}
+.wrapper__item a:hover{
+    color:#F67E7E;
+}
+.footer {
+    background-color: #002529;
+    padding: 48px 0;
+}
+
+.footer_inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__menu {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    width: 159px;
+    margin-right: 125px;
+}
+
+.footer__menu .footer_logo a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    transition: all ease 0.5s;
+}
+
+.footer__menu .footer_logo a:hover{
+    color: #F67E7E;
+}
+
+.footer__menu .footer_logo:nth-child(2) {
+    display: flex;
+    flex-grow: 1;
+}
+
+.footer__adress {
+    display: flex;
+    flex-grow: 1;
+}
+
+.footer__list {
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.footer__icons{
+    display: flex;
+    flex-direction: column;
+}
+.footer__list--icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footer__item--icon:nth-child(2){
+    padding: 0 25px;
+}
+
+.footer__icons p{
+    margin-top: 49px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
