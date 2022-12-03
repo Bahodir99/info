@@ -176,15 +176,12 @@ a{
     text-align: center;
     font-style: normal;
     margin-top: 50px;
-    position: relative;
 }
 .page__item::before {
-    content: '';
-    background-image: url(../img/obb.png);
-    position: absolute;
-    background-position: center top;
-    width: 60px;
-    height: 60px;
+    content: url(../img/obb.png);
+    width: 67px;
+    margin: 0 auto;
+    margin-bottom: -20px;
 }
 .page__info{
     font-style: italic;

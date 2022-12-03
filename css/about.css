@@ -103,12 +103,13 @@ a{
     font-size: 40px;
     font-weight: 700;
     color: #fff;
-
+    line-height: 40px;
 }
 .hero__list{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 100px;
 }
 .hero__item{
     text-align: center;
@@ -126,21 +127,45 @@ a{
     position: relative;
 }
 .hero__con1::after{
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    border: 2px solid #F67E7E;
-    content: '+';
+    content: url(../about_img/Combined\ Shape.png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
     background-color: #F67E7E;
-    border-radius: 50%;
-    bottom: -22px;
-}
-.hero__con1:nth-child(6):after{
-    content: 'x';
-    position: absolute;
-    width: 50px;
-    height: 50px;
     border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -26px;
+}
+
+.hero__con2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
+    height: 220px;
+    background-color:#012F34;
+    flex-direction: column;
+    position: relative;
+}
+.hero__con2::after{
+    content: url(../about_img/Combined\ Shape\ \(2\).png);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 46px;
+    height: 46px;
+    background-color: #79C8C7;
+    border: 2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -26px
+}
+.hero__twit img{
+    margin-top: 20px;
+    margin-right: 20px;
 }
 .hero__item b{
     font-size: 20px;
