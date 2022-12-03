@@ -173,6 +173,28 @@ a{
     color:#79C8C7;
     margin: 10px 0;
 }
+.info{
+    background-image: url(../img/clients-bg.png);
+    background-color: #012F34;
+    padding: 150px;
+    background-repeat: no-repeat;
+
+}
+.info__inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.info__title{
+    color: #fff;
+    font-style: italic;
+    font-size: 48px;
+    line-height: 50px;
+    font-weight: 700;
+    margin-bottom: 70px;
+}
+
 .wrapper{
     background-color:  #F67E7E;
     padding: 85px 0;

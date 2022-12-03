@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    font-family: 'Livvic', sans-serif;
+}
+.container{
+    margin: 0 auto;
+    width: 1100px;
+}
+ul li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.header{
+    background-color:#014E56;
+    padding-top: 70px;
+}
+.header__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__list{
+    display: flex;
+    align-items: center;
+    width: 800px;
+}
+.header__item{
+    font-size: 18px;
+    line-height: 18px;    
+}
+.header__item a:hover{
+    color: #F67E7E;
+}
+.header__item:nth-child(2){
+    display: flex;
+    flex-grow: 1;
+    margin-left: 40px;
+}
+.header__item:nth-child(3){
+    padding: 10px 34px;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    transition: all ease 0.8s;
+}
+.header__item:nth-child(3):hover{
+    background-color: #F67E7E;
+}
+.header__item:nth-child(3) a:hover{
+    color: #014E56;
+}
+.hero{
+    background-color: #014E56;
+    background-image: url(../img/Group\ 8\ \(8\).png), url(../img/Group\ 7\ \(1\).png);
+    background-repeat: no-repeat;
+    background-position: left top  150px , right bottom;
+    padding-top: 150px;
+    padding-bottom: 140px;
+}
+.hero__inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.hero__title{
+    font-size: 60px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 100px;
+}
+.hero__subtitle{
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #F67E7E;
+    margin: 25px;
+}
+.hero__list{
+    display: flex;
+    flex-direction: column;
+}
+.hero__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+}
+.hero__item p{
+    margin-left: 35px;
+    width: 400px;
+}
+.hero__text{
+    margin-right: 40px;
+    padding-right: 40px;
+    margin-top: 50px;
+}
+.hero__info{
+    width: 450px;
+}
+.hero__inp{
+    width: 600px;
+    height: 30px;
+    background-color: #014E56;
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    padding-top: 50px;
+    font-size: 20px;
+    line-height: 40px;
+    color: #fff;
+}
+.hero__inp::placeholder{
+    color: #23aebe;
+    font-size: 18px;
+    line-height: 25px;
+}
+.hero__info:nth-child(5){
+    background-color: red;
+}
+.hero__btn{
+    margin-top: 40px;
+    width: 130px;
+    height: 48px;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+    font-style: italic;
+    border: 2px solid #000;
+    border-radius: 25px;
+    transition: all ease 0.8s;
+    cursor: pointer;
+}
+.hero__btn:hover{
+    background-color:#F67E7E;
+    color:#002529;
+}
+.footer {
+    background-color: #002529;
+    padding: 48px 0;
+}
+
+.footer_inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__menu {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    width: 159px;
+    margin-right: 125px;
+}
+
+.footer__menu .footer_logo a{
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    color: #FFFFFF;
+    transition: all ease 0.5s;
+}
+
+.footer__menu .footer_logo a:hover{
+    color: #F67E7E;
+}
+
+.footer__menu .footer_logo:nth-child(2) {
+    display: flex;
+    flex-grow: 1;
+}
+
+.footer__adress {
+    display: flex;
+    flex-grow: 1;
+}
+
+.footer__list {
+    list-style-type: none;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
+.footer__icons{
+    display: flex;
+    flex-direction: column;
+}
+.footer__list--icon{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.footer__item--icon:nth-child(2){
+    padding: 0 25px;
+}
+
+.footer__icons p{
+    margin-top: 49px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #FFFFFF;
+}
+Footer
+© 2022 GitHub, Inc.
+Footer navigation
+Terms
+Privacy
